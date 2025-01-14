@@ -11,11 +11,14 @@ import PowderCoatingService from './pages/PowderCoatingService';
 import Contact from './pages/Contact';
 import WorkingSector from './pages/WorkingSector';
 
-
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import './css/navbar.css';
+import './css/homeabout.css'
 function App() {
   return (
     <Router>
-      <div className="App">
+      <div className="App mainlayout">
         <Header />
         
           <Routes>

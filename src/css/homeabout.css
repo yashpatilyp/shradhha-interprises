@@ -1,0 +1,24 @@
+.homeAbout{
+          margin: 40px 20px;
+}
+.homeAbout p{
+          font-size: 18px;
+          line-height: 36px;
+
+}
+.card img{
+          width: 115px;
+          height: 115px;
+          margin: 20px auto;
+} 
+.card-body p{
+          font-weight: 600;
+}
+
+
+
+.test img {
+          width: 80px;
+          height: 80px;
+
+}
