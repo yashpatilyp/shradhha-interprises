@@ -16,7 +16,7 @@ const HomeAbout = () => {
 
 <div className="row">
         <div className="col-lg-3 col-md-6 col-sm-12 mb-4">
-          <div className="card shadow">
+          <div className="card ">
             <img src="/images/c1.png" className="card-img-top" alt="..." />
             <div className="card-body d-flex flex-column justify-content-end">
               <p className="card-text text-center">Trustworthiness</p>
@@ -24,7 +24,7 @@ const HomeAbout = () => {
           </div>
         </div>
         <div className="col-lg-3 col-md-6 col-sm-12 mb-4">
-          <div className="card shadow">
+          <div className="card ">
             <img src="/images/c2.png" className="card-img-top" alt="..." />
             <div className="card-body d-flex flex-column justify-content-end">
               <p className="card-text text-center">Creative Thinking
@@ -33,7 +33,7 @@ const HomeAbout = () => {
           </div>
         </div>
         <div className="col-lg-3 col-md-6 col-sm-12 mb-4">
-          <div className="card shadow">
+          <div className="card ">
             <img src="/images/c3.png" className="card-img-top" alt="..." />
             <div className="card-body d-flex flex-column justify-content-end">
               <p className="card-text text-center">Accountability</p>
@@ -41,7 +41,7 @@ const HomeAbout = () => {
           </div>
         </div>
         <div className="col-lg-3 col-md-6 col-sm-12 mb-4">
-          <div className="card shadow">
+          <div className="card ">
             <img src="/images/c4.png" className="card-img-top" alt="..." />
             <div className="card-body d-flex flex-column justify-content-end">
               <p className="card-text text-center ">Passion for the Job</p>
@@ -56,10 +56,14 @@ const HomeAbout = () => {
   <div className="m-2">
     <img src="/images/ha1.png" alt="About Us Image 1" className="img-fluid" />
   </div>
-  <div className="m-2">
-    <img src="/images/ha2.png" alt="About Us Image 2" className="img-fluid" />
+  <div className="m-2 image-container">
+    <img src="/images/ha2.png" alt="About Us Image 2" className="img-fluid hover-image" />
+    <div className="hover-overlay">
+      <div className="hover-text">" We transfer ideas into pricious solutions in fabrication, Machining, laser cutting, powder coating and Bending . Trusted quality, innovative results. "</div>
+    </div>
   </div>
 </div>
+
     </div>
 
 

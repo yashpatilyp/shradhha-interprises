@@ -15,6 +15,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import './css/navbar.css';
 import './css/homeabout.css'
+import './css/footer.css'
 function App() {
   return (
     <Router>

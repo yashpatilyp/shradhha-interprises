@@ -57,7 +57,7 @@ const Header = () => {
 
             {/* Add Sign Up Button in Menu for Mobile View */}
             <li className="nav-item d-md-none">
-              <button className="btn btn-primary mt-2" type="button">
+              <button className="btn nav-btn mt-2" type="button">
               Contact
               </button>
             </li>
@@ -66,7 +66,7 @@ const Header = () => {
 
         {/* Right: Sign Up Button (Visible in Large Viewports Only) */}
         <div className="d-none d-md-flex ms-auto">
-          <button className="btn btn-primary" type="button">
+          <button className="btn nav-btn" type="button">
             Contact
           </button>
         </div>

@@ -1,130 +1,108 @@
-import React from 'react'
+import React from "react";
 
 const Footer = () => {
   return (
-   <>
-   <div className="container">
-  <footer className="py-5">
-    <div className="row">
-      <div className="col-6 col-md-2 mb-3">
-       
-        <ul className="nav flex-column">
-          <img src="/images/logo.png" alt="" srcset="" />
-        </ul>
-      </div>
-      <div className="col-6 col-md-2 mb-3">
-        <h5>Section</h5>
-        <ul className="nav flex-column">
-          <li className="nav-item mb-2">
-            <a href="#" className="nav-link p-0 text-muted">
-              Home
-            </a>
-          </li>
-          <li className="nav-item mb-2">
-            <a href="#" className="nav-link p-0 text-muted">
-              Features
-            </a>
-          </li>
-          <li className="nav-item mb-2">
-            <a href="#" className="nav-link p-0 text-muted">
-              Pricing
-            </a>
-          </li>
-          <li className="nav-item mb-2">
-            <a href="#" className="nav-link p-0 text-muted">
-              FAQs
-            </a>
-          </li>
-          <li className="nav-item mb-2">
-            <a href="#" className="nav-link p-0 text-muted">
-              About
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div className="col-6 col-md-2 mb-3">
-        <h5>Section</h5>
-        <ul className="nav flex-column">
-          <li className="nav-item mb-2">
-            <a href="#" className="nav-link p-0 text-muted">
-              Home
-            </a>
-          </li>
-          <li className="nav-item mb-2">
-            <a href="#" className="nav-link p-0 text-muted">
-              Features
-            </a>
-          </li>
-          <li className="nav-item mb-2">
-            <a href="#" className="nav-link p-0 text-muted">
-              Pricing
-            </a>
-          </li>
-          <li className="nav-item mb-2">
-            <a href="#" className="nav-link p-0 text-muted">
-              FAQs
-            </a>
-          </li>
-          <li className="nav-item mb-2">
-            <a href="#" className="nav-link p-0 text-muted">
-              About
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div className="col-md-5 offset-md-1 mb-3">
-        <form>
-          <h5>Subscribe to our newsletter</h5>
-          <p>Monthly digest of what's new and exciting from us.</p>
-          <div className="d-flex flex-column flex-sm-row w-100 gap-2">
-            <label htmlFor="newsletter1" className="visually-hidden">
-              Email address
-            </label>
-            <input
-              id="newsletter1"
-              type="text"
-              className="form-control"
-              placeholder="Email address"
-            />
-            <button className="btn btn-primary" type="button">
-              Subscribe
-            </button>
-          </div>
-        </form>
-      </div>
-    </div>
-    <div className="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-      <p>© 2022 Company, Inc. All rights reserved.</p>
-      <ul className="list-unstyled d-flex">
-        <li className="ms-3">
-          <a className="link-dark" href="#">
-            <svg className="bi" width={24} height={24}>
-              <use xlinkHref="#twitter" />
-            </svg>
-          </a>
-        </li>
-        <li className="ms-3">
-          <a className="link-dark" href="#">
-            <svg className="bi" width={24} height={24}>
-              <use xlinkHref="#instagram" />
-            </svg>
-          </a>
-        </li>
-        <li className="ms-3">
-          <a className="link-dark" href="#">
-            <svg className="bi" width={24} height={24}>
-              <use xlinkHref="#facebook" />
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </footer>
+    <>
+      <div className="container ">
+        <footer className="py-5">
+          <div className="row">
+            {/* Column 1: Logo */}
+            <div className="col-12 col-md-3 mb-4">
+              <img
+                src="/images/logo.png"
+                alt="Logo"
+                className="img-fluid mb-3"
+              />
+              <p className="">
+                Building a better future through innovation and technology.
+              </p>
+            </div>
+
+            {/* Column 2: Quick Links */}
+            <div className="col-6 col-md-3 mb-4 ">
+              <h5>Quick Links</h5>
+              <ul className="nav flex-column">
+                <li className="nav-item mb-2">
+                  <a href="#" className=" p-0 ">
+                    Home
+                  </a>
+                </li>
+                <li className="nav-item mb-2">
+                  <a href="#" className=" p-0 ">
+                    About
+                  </a>
+                </li>
+                <li className="nav-item mb-2">
+                  <a href="#" className="p-0 ">
+                    Services
+                  </a>
+                </li>
+                <li className="nav-item mb-2">
+                  <a href="#" className="p-0 ">
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            {/* Column 3: Address and Social Media */}
+            <div className="col-6 col-md-3 mb-4">
+              <h5>Contact Us</h5>
+              <p className="">
+              DSK Vishva Road, Behind Royal Hotel, Barangani Mala, Dhayari, Pune - 411041
+
+              </p>
+              
+            </div>
+
+            {/* Column 4: Contact Info */}
+            <div className="col-12 col-md-3 mb-4">
+  <h5>Get in Touch</h5>
+  <p>
+    Subhash Patel: +91 9511613492
+  </p>
+  <p>
+    Shubham Patel: +91 7030517156
+    <br />
+    <span className="text-wrap d-inline-block">
+      shraddhaentp74@gmail.com
+    </span>
+  </p>
+  <form>
+    {/* Add any form fields here */}
+  </form>
 </div>
 
-   
-   </>
-  )
-}
+          </div>
 
-export default Footer
+          {/* Footer Bottom */}
+          <div className="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+            <p>© 2024 Shraddha Enterprises. Crafting Precision & Quality Since 2015. All Rights Reserved.</p>
+            <ul className="list-unstyled d-flex">
+              <li className="ms-3">
+                <a href="#" className="link-dark">
+                  <i className="bi bi-twitter" style={{ fontSize: "1.5rem" ,color:"#1DA1F2"}} />
+                </a>
+              </li>
+              <li className="ms-3">
+                <a href="#" className="link-dark">
+                  <i
+                    className="bi bi-instagram"
+                    style={{ fontSize: "1.5rem" ,color:"#d62976"}}
+                  />
+                </a>
+              </li>
+              <li className="ms-3">
+                <a href="#" className="link-dark">
+                  <i className="bi bi-facebook" style={{ fontSize: "1.5rem" ,color:"blue"}} />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+    </>
+  );
+};
+
+export default Footer;

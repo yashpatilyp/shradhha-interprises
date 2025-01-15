@@ -1,0 +1,48 @@
+footer {
+          background-color: #f8f9fa;
+        }
+        
+        footer h5 {
+          color: #343a40;
+          margin-bottom: 1rem;
+        }
+        
+        footer a {
+          text-decoration: none;
+          font-weight: 600;
+          color: #343a40;
+        }
+        
+        footer a:hover {
+          color: #007bff;
+        }
+        
+        footer .nav-link {
+          padding: 0.5rem 0;
+        }
+        
+        footer .list-unstyled li {
+          display: inline-block;
+          margin-right: 15px;
+        }
+        
+        footer .bi {
+          color: #343a40;
+        }
+        
+        footer .bi:hover {
+          color: #007bff;
+        }
+        
+        footer .form-control {
+          border-radius: 5px;
+        }
+        
+        footer .btn-primary {
+          border-radius: 5px;
+        }
+        .text-wrap {
+          word-break: break-word; /* Break long words if necessary */
+          white-space: normal;   /* Ensure text wraps properly */
+        }
+        
