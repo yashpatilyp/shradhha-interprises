@@ -3,8 +3,8 @@ import React from "react";
 const Footer = () => {
   return (
     <>
-      <div className="container ">
-        <footer className="py-5">
+      <div className="container "style={{padding:"0px"}}>
+        <footer className="py-5"style={{padding:"10px 20px"}}>
           <div className="row">
             {/* Column 1: Logo */}
             <div className="col-12 col-md-3 mb-4">

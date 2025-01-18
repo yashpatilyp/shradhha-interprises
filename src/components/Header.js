@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-
+import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 const Header = () => {
   const [activeMenu, setActiveMenu] = useState("Home");
@@ -9,16 +10,16 @@ const Header = () => {
   };
 
   return (
-    <nav className="navbar navbar-expand-md">
-      <div className="container-fluid">
+    <nav className="navbar navbar-expand-md mainlayout">
+      <div className="container ">
         {/* Left: Logo */}
-        <a className="navbar-brand" href="#">
+        <Link className="navbar-brand" to="/">
           <img
             src="/images/logo.png"
             alt="Logo"
             className="d-inline-block align-text-top"
           />
-        </a>
+        </Link>
 
         {/* Toggle button for mobile view */}
         <button
@@ -37,38 +38,82 @@ const Header = () => {
         <div className="collapse navbar-collapse" id="navbarContent">
           <ul className="navbar-nav mx-auto mb-2 mb-lg-0 gap-4 nav-menu">
             {[
-              "Home",
-              "About Us",
-              "Services",
-              "Working Sector",
-            ].map((menu) => (
-              <li
-                key={menu}
-                className={`nav-item ${
-                  activeMenu === menu ? "active-menu" : ""
-                }`}
-                onClick={() => handleMenuClick(menu)}
-              >
-                <a className="nav-link" href={`#${menu.toLowerCase()}`}>
-                  {menu}
-                </a>
-              </li>
-            ))}
+              { name: "Home", path: "/" },
+              { name: "About Us", path: "/#about" },
+              { name: "Working Sector", path: "/working-sector" },
+            ].map(({ name, path }) =>
+              name === "About Us" ? (
+                <li
+                  key={name}
+                  className={`nav-item ${
+                    activeMenu === name ? "active-menu" : ""
+                  }`}
+                  onClick={() => handleMenuClick(name)}
+                >
+                  <HashLink className="nav-link" smooth to={path}>
+                    {name}
+                  </HashLink>
+                </li>
+              ) : (
+                <li
+                  key={name}
+                  className={`nav-item ${
+                    activeMenu === name ? "active-menu" : ""
+                  }`}
+                  onClick={() => handleMenuClick(name)}
+                >
+                  <Link className="nav-link" to={path}>
+                    {name}
+                  </Link>
+                </li>
+              )
+            )}
+            {/* Dropdown Menu for Services */}
+            <li className="nav-item dropdown">
+  <Link
+    className={`nav-link dropdown-toggle ${
+      activeMenu === "Services" ? "active-menu" : ""
+    }`}
+    to="#"
+    id="servicesDropdown"
+    role="button"
+    data-bs-toggle="dropdown"
+    aria-expanded="false"
+    onClick={() => handleMenuClick("Services")}
+  >
+    Services
+  </Link>
+  <ul className="dropdown-menu" aria-labelledby="servicesDropdown">
+    {[
+      { name: "Fabrication", path: "/services/fabrication" },
+      { name: "Machining", path: "/services/machining" },
+      { name: "Laser Cutting", path: "/services/laser-cutting" },
+      { name: "Powder Coating", path: "/services/powder-coating" },
+    ].map(({ name, path }) => (
+      <li key={name}>
+        <Link className="dropdown-item" to={path}>
+          {name}
+        </Link>
+      </li>
+    ))}
+  </ul>
+</li>
 
-            {/* Add Sign Up Button in Menu for Mobile View */}
+
+            {/* Add Contact Button in Menu for Mobile View */}
             <li className="nav-item d-md-none">
-              <button className="btn nav-btn mt-2" type="button">
-              Contact
-              </button>
+              <Link to="/contact" className="btn nav-btn mt-2">
+                Contact
+              </Link>
             </li>
           </ul>
         </div>
 
-        {/* Right: Sign Up Button (Visible in Large Viewports Only) */}
+        {/* Right: Contact Button (Visible in Large Viewports Only) */}
         <div className="d-none d-md-flex ms-auto">
-          <button className="btn nav-btn" type="button">
+          <Link to="/contact" className="btn nav-btn">
             Contact
-          </button>
+          </Link>
         </div>
       </div>
     </nav>

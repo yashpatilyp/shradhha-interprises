@@ -2,7 +2,7 @@ import React from 'react'
 
 const HomeAbout = () => {
   return (
-    <div className=' homeAbout'>
+    <div className=' homeAbout' id='about'>
           <h1 className='text-center'>About Us</h1>
           <p>Shraddha Enterprises has been providing top-quality Mechanical solutions since 2015. We specialize in custom manufacturing, offering precision in every project  which is related with fabrication, Machining , laser cutting &  Bending, Powder coating. Our skilled team ensures that each solution is tailored to meet client needs, delivering exceptional results and achieve precision and accuracy in every project. With expertise in bending and forming, we can create complex shapes and structures that meet the most stringent specifications. Our commitment to quality and attention to detail ensures that every fabrication project meets industry standards and exceeds client expectations.
 </p>
