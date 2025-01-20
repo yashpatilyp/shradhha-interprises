@@ -27,7 +27,7 @@
                     margin-top: 20px;
                     font-weight: 400 !important;
                     font-size: 18px !important; 
-                    line-height: 30px;
+                    line-height: 36px !important;
           }
           .fab-img {
                     max-width: 600px; 
@@ -47,8 +47,8 @@
            }
            .fab-main p {
                     font-weight: 600;
-                    font-size: 16px;
-                    line-height: 25px;
+                    font-size: 18px;
+                    line-height: 36px;
                     
           }
 }

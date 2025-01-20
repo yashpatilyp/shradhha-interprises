@@ -10,7 +10,7 @@ const Header = () => {
   };
 
   return (
-    <nav className="navbar navbar-expand-md mainlayout">
+    <nav className="navbar navbar-expand-md mainlayout" style={{position:"sticky",top:"0",zIndex:"100"}}>
       <div className="container ">
         {/* Left: Logo */}
         <Link className="navbar-brand" to="/">
