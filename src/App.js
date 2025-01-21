@@ -23,7 +23,7 @@ import PageNotFound from './components/PageNotFound';
 function App() {
   return (
     <Router>
-      <div className="App mainlayout">
+      {/* <div className="App mainlayout">
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -36,7 +36,7 @@ function App() {
           <Route path="*" element={<PageNotFound/>} />
         </Routes>
         <Footer />
-      </div>
+      </div> */}
     </Router>
   );
 }
