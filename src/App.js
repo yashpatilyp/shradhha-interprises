@@ -19,11 +19,12 @@ import './css/homeabout.css';
 import './css/footer.css';
 import './css/f-main.css'
 import PageNotFound from './components/PageNotFound';
+import FixedIcons from './components/FixedIcons';
 
 function App() {
   return (
     <Router>
-      {/* <div className="App mainlayout">
+      <div className="App mainlayout">
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -35,8 +36,9 @@ function App() {
           <Route path="/working-sector" element={<WorkingSector />} />
           <Route path="*" element={<PageNotFound/>} />
         </Routes>
+        <FixedIcons/>
         <Footer />
-      </div> */}
+      </div>
     </Router>
   );
 }
