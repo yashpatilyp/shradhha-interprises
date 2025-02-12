@@ -24,7 +24,7 @@ import FixedIcons from './components/FixedIcons';
 function App() {
   return (
     <Router>
-      <div className="App mainlayout">
+      {/* <div className="App mainlayout">
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -38,7 +38,7 @@ function App() {
         </Routes>
         <FixedIcons/>
         <Footer />
-      </div>
+      </div> */}
     </Router>
   );
 }
