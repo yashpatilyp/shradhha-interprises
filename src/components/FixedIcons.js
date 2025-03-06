@@ -7,7 +7,7 @@ const FixedIcons = () => {
     {/* Fixed icons */}
     <div className="fixed-icons">
         <a
-          href="https://wa.me/+919511613492"
+          href="https://wa.me/+919922597496"
           target="_blank"
           rel="noopener noreferrer"
           className="whatsapp-icon"
@@ -15,7 +15,7 @@ const FixedIcons = () => {
           <FaWhatsapp size={22} />
         </a>
         <a
-          href="mailto:shraddhaentp74@gmail.com
+          href="mailto:shubhampatel1910@gmail.com
 
 "
           className="email-icon"
